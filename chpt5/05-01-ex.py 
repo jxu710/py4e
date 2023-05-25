@@ -4,13 +4,16 @@ sum = 0
 
 while True:
     user_input = input("Enter an number")
-    count = count + 1
+    if user_input == "done":
+        print("count:", count)
+        print("sum:", sum)
+        print("average :", sum / count)
+        break
+
     try:
-        sum = sum + int(user_input)
+        count = count + 1
+        inputNumber = int(user_input)
+        sum = sum + inputNumber
     except:
         print("Invalid Input")
-        break
-    if user_input == "done":
-        print("count:", count - 1)
-        print("sum:", sum)
         break
