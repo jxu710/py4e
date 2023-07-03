@@ -12,15 +12,23 @@ for line in handle:
         # idiom: retrieve/create/update counter
         counts[word] = counts.get(word, 0) + 1
 
-
 # to find the most common word
-bigword = None
-bigcount = None
 
-for word, count in counts.items():
-    # print(word, count)
-    if bigword is None or count > bigcount:
-        bigword = word
-        bigcount = count
+#to make dictionary into list of tuples
 
-print(bigword, bigcount)
+# 一种解法
+
+temp = list()
+x = sorted(counts.items(),reverse=True)
+for (k,v) in x:
+    newt=(v,k)
+    temp.append(newt)
+
+for (v,k) in temp[:5]:
+    print(k,v)
+
+
+# 另一种解法
+# print( sorted( [ (v,k) for k,v in counts.items() ], reverse=True ) )
+
+
