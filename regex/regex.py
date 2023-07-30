@@ -16,4 +16,7 @@ text1 = re.findall("^From (\S*@*\S)", line)
 
 # to show only email.com
 text2 = re.findall("@([^ ]*)", line)
+# or
+
+# text3 = re.findall("^From .*@([^ ]*)", line)
 print(text2)
