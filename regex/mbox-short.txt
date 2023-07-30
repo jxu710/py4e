@@ -1,0 +1,6 @@
+X-DSPAM-Confidence:0.923
+sclkcds
+X-DSPAM-Confidence:0.234
+X-DSPAM-Confidence:0.121
+SOMDVM  
+
