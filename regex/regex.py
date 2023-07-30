@@ -19,4 +19,11 @@ text2 = re.findall("@([^ ]*)", line)
 # or
 
 # text3 = re.findall("^From .*@([^ ]*)", line)
-print(text2)
+# print(text2)
+
+
+# escape Character
+
+a = "we just received $100.00 for snack."
+b = re.findall("\$[0-9.]+", a)
+print(b)
