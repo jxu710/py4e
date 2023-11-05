@@ -8,3 +8,5 @@ SELECT * FROM Users WHERE email="quincy@freecodecamp.org"
 -- It defines a new row by listing the fields we want to include followed by the values we want placed in the new row.
 
 INSERT INTO Artists (name) values ("The Beatles")
+INSERT INTO Artists (name) values ("Zed Zeppelin")
+
